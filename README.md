@@ -42,7 +42,7 @@ Example
 _Response_:
 HTTP response code 
 
-Automated sending of messages to a topic can be iniitiated using jacascript by visting http:localhost:8000/ in your browser
+Automated sending of messages to a topic can be iniitiated using javascript by visting http:localhost:8000/ in your browser
 
 2. **Payload sent to subscribers**
 
@@ -52,8 +52,8 @@ _Request_:
 Example
 ```json
 {
-	topic: String],  
-  data: object
+  "topic": "String",  
+  "data": "object"
  }
 ``` 
 
