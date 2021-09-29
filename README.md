@@ -7,6 +7,8 @@ The publisher is a server that keeps track of topics -> subscribers where a topi
 string and a subscriber is an HTTP endpoint. When a message is published on a topic, it is forwarded to all subscriber endpoints. The publisher runs on port 8000
 A user interface has been created. On load it initiates a javascript event publishing to publish events to a topic. (http://localhost:8000/)
 
+**Clone and Run project as spring boot project**
+
 **Publisher server end points**
 
 1. **To Create a Subscription**
