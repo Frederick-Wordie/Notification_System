@@ -1,10 +1,13 @@
 # Notification_System
 Notification system (Publisher subscriber example) 
 
+
 This project is made up of two applications, a publisher and a subscriber.
 The publisher is a server that keeps track of topics -> subscribers where a topic is a
 string and a subscriber is an HTTP endpoint. When a message is published on a topic, it is forwarded to all subscriber endpoints. The publisher runs on port 8000
 A user interface has been created. On load it initiates a javascript event publishing to publish events to a topic. (http://localhost:8000/)
+
+**Publisher server end points**
 
 1. **To Create a Subscription**
 
@@ -57,4 +60,24 @@ Example
  }
 ``` 
 
+**Subscribing server end points**
+the applicaton runs on port 9000. It has an end point to receive the sent data and also a GET end point to monitor the events being sent. This is done using Server sent event. The message is streamed unto the web page using event source in javascript
+
+2. **End points to receive published events**
+
+`POST /test1`
+
+_Received data structure_: 
+
+Example
+```json
+{
+	"topic": "String"
+	"data": "object",     		
+ }
+``` 
+_Response_:
+HTTP response code 
+
+**Visit http:localhost:9000/ in your browser to see the events being sent**
 
