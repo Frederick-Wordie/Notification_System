@@ -61,11 +61,12 @@ Example
 ``` 
 
 **Subscribing server end points**
-the applicaton runs on port 9000. It has an end point to receive the sent data and also a GET end point to monitor the events being sent. This is done using Server sent event. The message is streamed unto the web page using event source in javascript
+
+The applicaton runs on port 9000. It has an end point to receive the sent data and also a GET end point to monitor the events being sent. This is done using Server sent event. The message is streamed unto the web page using event source in javascript
 
 2. **End points to receive published events**
 
-`POST /test1`
+`POST /test1` and `POST /test2`
 
 _Received data structure_: 
 
